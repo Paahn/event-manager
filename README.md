@@ -1,4 +1,5 @@
-# real-world-vue
+# Event Manager
+This is a single page application to create, manage and edit custom events. 
 
 ## Project setup
 ```
