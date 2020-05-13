@@ -16,6 +16,6 @@ data() {
 
 <style scoped>
 h4 {
-  color: aqua;
+  color: rgb(72, 255, 34);
 }
 </style>
