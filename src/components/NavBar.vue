@@ -1,13 +1,10 @@
 <template>
-  <div id="nav">
-    <router-link to="/" class="brand">Real World Events</router-link>|
+  <div id="nav" class="nav">
+    <router-link to="/" class="brand">Real World Events</router-link>
 
     <nav>
-      
       <router-link :to="{ name: 'event-list' }">List</router-link>|
-      <router-link :to="{ name: 'event-create' }">Create Event</router-link>|
-      <router-link :to="{ name: 'user', params: { username: 'Panos' } }">Panos</router-link>
-    
+      <router-link :to="{ name: 'event-create' }">Create Event</router-link>    
     </nav>
   </div>
 </template>
@@ -16,7 +13,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .nav {
   display: flex;
   justify-content: space-between;
