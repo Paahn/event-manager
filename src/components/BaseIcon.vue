@@ -1,20 +1,12 @@
 <template>
   <div class="icon-wrapper">
-    <svg class="icon"
-      :width="width"
-      :height="height"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
+    <svg class="icon" :width="width" :height="height">
       <use v-bind="{'xlink:href':'/feather-sprite.svg#'+name}" />
     </svg>
   </div>
 </template>
 
-    <svg 
+  
 <script>
 export default {
   name: 'Icon',
