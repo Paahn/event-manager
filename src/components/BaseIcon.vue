@@ -1,8 +1,8 @@
 <template>
   <div class="icon-wrapper">
-    <svg 
-      width="24"
-      height="24"
+    <svg class="icon"
+      :width="width"
+      :height="height"
       fill="none"
       stroke="currentColor"
       stroke-width="2"
@@ -14,8 +14,10 @@
   </div>
 </template>
 
+    <svg 
 <script>
 export default {
+  name: 'Icon',
   props: {
     name: String, // the name of the symbol we want to use
     width: {
@@ -31,4 +33,19 @@ export default {
 </script>
 
 <style scoped>
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.icon {
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  margin-right: 6px;
+}
 </style>
